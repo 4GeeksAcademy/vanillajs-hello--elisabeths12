@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: rgb(232, 162, 162);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.suit {
+    position: absolute;
+    font-size: 2rem;
+}
+
+.top {
+    top: 10px;
+    left: 10px;
+}
+
+.bottom {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+/* Estilos de los palos */
+.heart, .diamond {
+    color: rgb(139, 84, 84);
+}
+
+.spade, .club {
+    color: black;
+}
+
+/* Botón */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #e8977e;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d96c4b;
+}
+
+.resize-controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input {
+    width: 60px;
+    padding: 5px;
+}
