@@ -1,10 +1,11 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  root: './src',
+  plugins: [react()], // Agrega el plugin de React para Vite
+  root: "./src",
   build: {
-    // Specify the output directory for the build. This path is relative to your project root.
-    outDir: '../dist',
+    outDir: "../dist",
   },
   server: {
     port: 3000,

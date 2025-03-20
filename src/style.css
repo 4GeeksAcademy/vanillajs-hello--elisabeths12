@@ -1,5 +1,89 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+body {
     background: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.suit {
+    position: absolute;
+    font-size: 2rem;
+}
+
+.top {
+    top: 10px;
+    left: 10px;
+}
+
+.bottom {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+/* Colores de los palos */
+.heart, .diamond {
+    color: red;
+}
+
+.spade, .club {
+    color: black;
+}
+
+/* Botón */
+.btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+.resize-controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
 }
